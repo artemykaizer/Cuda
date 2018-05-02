@@ -1,0 +1,59 @@
+.skills__header{
+	font-size: 40px;
+	line-height: 29px;
+	text-transform: uppercase;
+	text-align: center;
+	padding-top: 110px;
+	padding-bottom: 50px;
+	margin: 0px;
+}
+
+.skills__content{
+	font-size: 18px;
+	line-height: 26px;
+	max-width: 570px;
+	text-align: center;
+	margin: auto;
+	padding-bottom: 80px;
+}
+
+.skills__wrapper{
+	display: flex;
+	justify-content: space-around;
+}
+
+.skills__item{
+	width: 165px;
+}
+
+.skills__item__num{
+	width: 160px;
+	height: 160px;
+}
+
+.skills__item__name{
+	font-size: 24px;
+	line-height: 24px;
+	text-transform: uppercase;
+	font-weight: bold;
+	text-align: center;
+	margin-bottom: 120px;
+}
+
+@skills-item-bg: url(../img/sprite3.png);
+
+.skills__item__num--web{
+	background: @skills-item-bg no-repeat -160px -160px;
+}
+
+.skills__item__num--html{
+	background: @skills-item-bg no-repeat -160px 0px;
+}
+
+.skills__item__num--design{
+	background: @skills-item-bg no-repeat 0px 0px;
+}
+
+.skills__item__num--ui{
+	background: @skills-item-bg no-repeat 0px -160px;
+}

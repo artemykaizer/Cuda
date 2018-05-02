@@ -1,0 +1,97 @@
+.staff-wrapper{
+	display: flex;
+	justify-content: space-around;
+	padding-bottom: 127px;
+}
+
+.staff-item{
+	width: 200px;
+	margin-top: 80px;
+}
+
+.staff-item__photo{
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+}
+
+@photo-color: #36B6E2;
+
+.staff-item__photo--anne{
+	background-color: @photo-color;
+}
+
+.staff-item__photo--kate{
+	background-color: spin(@photo-color, 20);
+}
+
+.staff-item__photo--olivia{
+	background-color: spin(@photo-color, 30);
+}
+
+.staff-item__photo--ashley{
+	background-color: spin(@photo-color, 40);
+}
+
+
+
+.staff-item__name{
+	text-transform: uppercase;
+	margin-top: 40px;
+	font-size: 24px;
+	line-height: 18px;
+	text-align: center;
+}
+
+.staff-item__position{
+	display: block;
+	margin-top: 15px;
+	font-size: 16px;
+	line-height: 18px;
+	text-align: center;
+	color: #30bae7;
+}
+
+.staff-item__description{
+	margin-top: 30px;
+	text-align: center;
+	min-height: 120px;
+}
+
+.staff-item__social-wrapper{
+	width: 165px;
+	height: 30px;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+@social-sprite: url(../img/css_sprites.png);
+
+.social--facebook{
+	background: @social-sprite no-repeat 3px -95px;
+}
+
+.social--twitter{
+	background: @social-sprite no-repeat -37px -58px;
+}
+
+.social--linkedin{
+	background: @social-sprite no-repeat -2px -61px;
+}
+
+.social--email{
+	background: @social-sprite no-repeat -75px -57px;
+}
+
+.staff-item__social{
+	width: 32px;
+	height: 32px;
+	border-radius: 50%;
+	background-color: #bdd1df;
+}
+
+.staff-item__social:hover{
+	cursor: pointer;
+	background-color: darken(#bdd1df, 3%)
+}
